@@ -6,9 +6,12 @@ import { Text, View } from '@/components/Themed';
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="app/(tabs)/index.tsx" />
+      <Text style={styles.title}>My Uber App</Text>
+      <View>
+        <View style={styles.dropShadow}></View>
+        <View></View>
+      </View>
+      {/* <EditScreenInfo path="app/(tabs)/index.tsx" /> */}
     </View>
   );
 }
@@ -22,6 +25,9 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 20,
     fontWeight: 'bold',
+  },
+  dropShadow:{
+    boxShadow: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px',
   },
   separator: {
     marginVertical: 30,
