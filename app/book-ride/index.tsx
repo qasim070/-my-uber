@@ -4,7 +4,7 @@ import { Text, View } from "@/components/Themed";
 const car = require("../../assets/images/ride.png");
 const food = require("../../assets/images/order-food.png");
 
-export default function TabOneScreen() {
+export default function BookRide() {
   return (
     <View style={styles.container}>
       <Text style={{ fontFamily: "Poppins-Bold", fontSize: 20 }}>
@@ -14,7 +14,7 @@ export default function TabOneScreen() {
         <Link href="/" asChild>
           <View style={styles.card}>
             <Image source={car} />
-            <Text style={{ fontFamily: "Poppins-Medium", fontSize: 16 }}>
+            <Text style={{ fontFamily: "Poppins-Bold", fontSize: 16 }}>
               Get A Ride
             </Text>
           </View>
@@ -23,7 +23,7 @@ export default function TabOneScreen() {
         <Link href="/" asChild>
         <View style={styles.card}>
           <Image source={food} />
-          <Text style={{ fontFamily: "Poppins-Medium", fontSize: 16 }}>
+          <Text style={{ fontFamily: "Poppins-Bold", fontSize: 16 }}>
             Order Food
           </Text>
         </View>
