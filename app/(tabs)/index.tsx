@@ -14,7 +14,7 @@ export default function TabOneScreen() {
         My Uber App
       </Text>
       <View style={styles.main}>
-        <Link href="/book-ride/" asChild>
+        <Link href="/book-ride/" >
           <View style={styles.card}>
             <Image source={car} />
             <Text style={{ fontFamily: "Poppins-Medium", fontSize: 18 }}>
@@ -23,7 +23,7 @@ export default function TabOneScreen() {
           </View>
         </Link>
 
-        <Link href="/two" asChild>
+        <Link href="/two" >
         <View style={styles.card}>
           <Image source={food} />
           <Text style={{ fontFamily: "Poppins-Medium", fontSize: 18 }}>
