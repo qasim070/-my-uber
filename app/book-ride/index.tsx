@@ -6,27 +6,27 @@ import { Link, Tabs } from "expo-router";
 
 
 export default function BookRide() {
-  interface RadioButtonProps {
-    label: string;
-    onPress: () => void;
-  }
+  // interface RadioButtonProps {
+  //   label: string;
+  //   onPress: () => void;
+  // }
   const [destinationVal, setDestiVal] = useState<string | undefined>(undefined);
-  const [selectedOption, setSelectedOption] = useState<string | undefined>(undefined);
+  // const [selectedOption, setSelectedOption] = useState<string | undefined>(undefined);
   
   const getLocName = () => {
     // alert(destinationVal)
   };
 
   
-  const RadioButton: React.FC<RadioButtonProps> = ({ label, onPress }) => (
-    <TouchableOpacity onPress={onPress} style={selectedOption === label ? styles.radioSelected : styles.radioTile}>
-      <Text>
-      {selectedOption === label ? <View style={styles.radioIconCheck}> <Feather name="check" size={14} color="white" style={{padding: 3}} />  </View> : <View style={styles.radioIconUnCheck}> <Feather name="check" size={14} color="white" style={{padding: 3}} />  </View>  }
-      </Text>
-      <FontAwesome5 name={label} size={20} color="black" style={{marginTop: 10}}  /> 
-      <Text style={styles.radioLabel}>{label}</Text>
-    </TouchableOpacity>
-  );
+  // const RadioButton: React.FC<RadioButtonProps> = ({ label, onPress }) => (
+  //   <TouchableOpacity onPress={onPress} style={selectedOption === label ? styles.radioSelected : styles.radioTile}>
+  //     <Text>
+  //     {selectedOption === label ? <View style={styles.radioIconCheck}> <Feather name="check" size={14} color="white" style={{padding: 3}} />  </View> : <View style={styles.radioIconUnCheck}> <Feather name="check" size={14} color="white" style={{padding: 3}} />  </View>  }
+  //     </Text>
+  //     <FontAwesome5 name={label} size={20} color="black" style={{marginTop: 10}}  /> 
+  //     <Text style={styles.radioLabel}>{label}</Text>
+  //   </TouchableOpacity>
+  // );
   return (
     <>
     <View style={styles.containerBottom}>
@@ -69,9 +69,9 @@ export default function BookRide() {
         <Text style={{marginTop: 10}}>{destinationVal}</Text>
         <Text style={{marginTop: 40 , fontFamily: 'Poppins-Medium' , fontSize: 20}}>Select Vehicle</Text>
       <View style={styles.vehContainer}>
-        <RadioButton label="motorcycle" onPress={() => setSelectedOption("motorcycle")} />
+        {/* <RadioButton label="motorcycle" onPress={() => setSelectedOption("motorcycle")} />
         <RadioButton label="car" onPress={() => setSelectedOption("car")} />
-        <RadioButton label="plane" onPress={() => setSelectedOption("plane")} />
+        <RadioButton label="plane" onPress={() => setSelectedOption("plane")} /> */}
       </View>
       </View>
 
